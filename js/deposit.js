@@ -7,6 +7,7 @@
     const depositeField = document.getElementById("deposit-field");
     const newDepositeAmountstring = depositeField.value;
     const newDepositeAmount = parseFloat(newDepositeAmountstring);
+    
 
 
     // step-3: get the current  deposite total  amount 
@@ -15,11 +16,15 @@
     const previousDepositeTotalstring = depositeTotalElement.innerText;
     const previousDepositeTotal = parseFloat(previousDepositeTotalstring);
 
+    /* ---------------------------------------------------------- */
+
     // step-4: Add number set total deposit
     const currentDepositeTotal = previousDepositeTotal + newDepositeAmount;
 
     //Set the deposit Total
     depositeTotalElement.innerText = currentDepositeTotal;
+
+    /* -------------------------------------------------- */
 
     //step-5:  Get balance current total
 
