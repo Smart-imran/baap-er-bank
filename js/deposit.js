@@ -7,6 +7,14 @@
     const depositeField = document.getElementById("deposit-field");
     const newDepositeAmountstring = depositeField.value;
     const newDepositeAmount = parseFloat(newDepositeAmountstring);
+     //step -7: clear the deposit field 
+    //depositeAmount ="";
+    depositeField.value = "";
+    if(isNaN(newDepositeAmount)){
+        alert("Please Enter a Number");
+        return;
+
+    }
     
 
 
@@ -37,13 +45,5 @@
     const currentBalanceTotal = previousBalanceTotal + newDepositeAmount;
     //set current balanceToaalelement
     balanceTotalelement.innerText =currentBalanceTotal;
-    
-
-
-
-    //step -7: clear the deposit field 
-    //depositeAmount ="";
-    depositeField.value = "";
-
 
 })
